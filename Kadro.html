@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style type="text/css">
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f4f9fc;
+  color: #003049;
+}
+
+header {
+  background: #0077b6;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #90e0ef;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background: linear-gradient(to right, #00b4d8, #0077b6);
+  color: white;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ffffff;
+  color: #0077b6;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #90e0ef;
+  color: #003049;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+footer {
+  background-color: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+.oyuncular {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.oyuncular h2 {
+  font-size: 2.5rem;
+  color: #0077b6;
+  margin-bottom: 40px;
+}
+
+.oyuncu-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+.oyuncu-kart {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 119, 182, 0.2);
+  padding: 15px;
+  width: 100%;
+  max-width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.oyuncu-kart:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 119, 182, 0.3);
+}
+
+.oyuncu-kart img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.oyuncu-kart h3 {
+  color: #0077b6;
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+}
+
+.oyuncu-kart p {
+  margin: 2px 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+@media (max-width: 1200px) {
+  .oyuncu-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .oyuncu-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .oyuncu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .oyuncu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+  </style>
+  <title>Oyuncu Kadrosu - Filenin Sultanları</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">Filenin Sultanları</div>
+    <nav>
+      <ul>
+        <li><a href="Ana Sayfa.html">Anasayfa</a></li>
+        <li><a href="Voleybol Nedir.html">Voleybol Nedir?</a></li>
+        <li><a href="Nasıl Oynanır.html">Nasıl Oynanır?</a></li>
+        <li><a href="Türkiye'de Kadın Voleybolu.html">Kadın Voleybolu</a></li>
+        <li><a href="Kadro.html" class="aktif">Kadro</a></li>
+        <li><a href="Başarılar.html">Başarılar</a></li>
+        <li><a href="Teknik Ekip.html">Teknik Ekip</a></li>
+        <li><a href="Tarihçe.html">Tarihçe</a></li>
+        <li><a href="fikstür.html">Fikstür</a></li>
+        <li><a href="Antranörler.html">Antrenörler</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="oyuncular">
+    <h2>Oyuncu Kadrosu</h2>
+    <div class="oyuncu-grid">
+      <!-- Oyuncu Kartları -->
+      <div class="oyuncu-kart">
+        <img src="simge aköz.jpg" alt="Simge Aköz">
+        <h3>Simge Aköz</h3>
+        <p>Yaş: 32</p>
+        <p>Pozisyon: Libero</p>
+      </div>
+
+      <div class="oyuncu-kart">
+        <img src="Gizem Örge.png" alt="Gizem Örge">
+        <h3>Gizem Örge</h3>
+        <p>Yaş: 31</p>
+        <p>Pozisyon: Libero</p>
+      </div>
+
+      <div class="oyuncu-kart">
+        <img src="elif şahin.jpeg" alt="Elif Şahin">
+        <h3>Elif Şahin</h3>
+        <p>Yaş: 23</p>
+        <p>Pozisyon: Pasör</p>
+      </div>
+
+      <div class="oyuncu-kart">
+        <img src="Cansu Özbay.jpg" alt="Cansu Özbay">
+        <h3>Cansu Özbay</h3>
+        <p>Yaş: 28</p>
+        <p>Pozisyon: Pasör</p>
+      </div>
+
+      <div class="oyuncu-kart">
+        <img src="Melissa Vargas.webp" alt="Melissa Vargas">
+        <h3>Melissa Vargas</h3>
+        <p>Yaş: 25</p>
+        <p>Pozisyon: Pasör Çaprazı</p>
+      </div>
+
+      <div class="oyuncu-kart">
+        <img src="hande baladın.webp" alt="Hande Baladın">
+        <h3>Hande Baladın</h3>
+        <p>Yaş: 27</p>
+        <p>Pozisyon: Smaçör</p>
+      </div>
+
+      <div class="oyuncu-kart">
+        <img src="Ebrar Karakurt.jpg" alt="Ebrar Karakurt">
+        <h3>Ebrar Karakurt</h3>
+        <p>Yaş: 24</p>
+        <p>Pozisyon: Pasör Çaprazı</p>
+      </div>
+
+      <div class="oyuncu-kart">
+        <img src="Meliha Diken.jpg" alt="Meliha Diken">
+        <h3>Meliha Diken</h3>
+        <p>Yaş: 30</p>
+        <p>Pozisyon: Smaçör</p>
+      </div>
+
+      <div class="oyuncu-kart">
+        <img src="Zehra Güneş.jpg" alt="Zehra Güneş">
+        <h3>Zehra Güneş</h3>
+        <p>Yaş: 25</p>
+        <p>Pozisyon: Orta Oyuncu</p>
+      </div>
+
+      <div class="oyuncu-kart">
+        <img src="Yaprak Erkek.webp" alt="Yaprak Erkek">
+        <h3>Yaprak Erkek</h3>
+        <p>Yaş: 22</p>
+        <p>Pozisyon: Orta Oyuncu</p>
+      </div>
+
+      <div class="oyuncu-kart">
+        <img src="saliha şahin.jpg" alt="Saliha Şahin">
+        <h3>Saliha Şahin</h3>
+        <p>Yaş: 24</p>
+        <p>Pozisyon: Smaçör</p>
+      </div>
+
+      <div class="oyuncu-kart">
+        <img src="buse berka özden.jpeg" alt="Buse Berka Özden">
+        <h3>Buse Berka Özden</h3>
+        <p>Yaş: 21</p>
+        <p>Pozisyon: Pasör</p>
+      </div>
+
+      <div class="oyuncu-kart">
+        <img src="deniz uyanık.png" alt="Deniz Uyanık">
+        <h3>Deniz Uyanık</h3>
+        <p>Yaş: 20</p>
+        <p>Pozisyon: Orta Oyuncu</p>
+      </div>
+
+      <div class="oyuncu-kart">
+        <img src="aslı kalaç.jpg" alt="Aslı Kalaç">
+        <h3>Aslı Kalaç</h3>
+        <p>Yaş: 29</p>
+        <p>Pozisyon: Orta Oyuncu</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Filenin Sultanları | Tüm Hakları Saklıdır</p>
+  </footer>
+</body>
+</html>

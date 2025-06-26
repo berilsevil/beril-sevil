@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style type="text/css">
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f4f9fc;
+  color: #003049;
+}
+
+header {
+  background: #0077b6;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #90e0ef;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background: linear-gradient(to right, #00b4d8, #0077b6);
+  color: white;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ffffff;
+  color: #0077b6;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #90e0ef;
+  color: #003049;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+footer {
+  background-color: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+.fikstur {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.fikstur h2 {
+  font-size: 2.5rem;
+  color: #0077b6;
+  margin-bottom: 40px;
+}
+
+.fikstur-listesi {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mac-karti {
+  background: #ffffff;
+  border-left: 6px solid #0077b6;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 119, 182, 0.1);
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.mac-karti:hover {
+  transform: translateY(-4px);
+}
+
+.mac-tarih {
+  font-weight: bold;
+  color: #0077b6;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.mac-detay {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.mac-detay span {
+  font-weight: bold;
+}
+
+.mac-sonuc {
+  font-size: 0.95rem;
+  color: #444;
+}
+  </style>
+  <title>Fikstür - Filenin Sultanları</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">Filenin Sultanları</div>
+    <nav>
+      <ul>
+        <li><a href="Ana Sayfa.html">Anasayfa</a></li>
+        <li><a href="Voleybol Nedir.html">Voleybol Nedir?</a></li>
+        <li><a href="Nasıl Oynanır.html">Nasıl Oynanır?</a></li>
+        <li><a href="Türkiye'de Kadın Voleybolu.html">Kadın Voleybolu</a></li>
+        <li><a href="Kadro.html">Kadro</a></li>
+        <li><a href="Başarılar.html">Başarılar</a></li>
+        <li><a href="Teknik Ekip.html">Teknik Ekip</a></li>
+        <li><a href="Tarihçe.html">Tarihçe</a></li>
+        <li><a href="fikstür.html" class="aktif">Fikstür</a></li>
+        <li><a href="Antranörler.html">Antrenörler</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="fikstur">
+    <h2>2025 Maç Fikstürü</h2>
+    <div class="fikstur-listesi">
+
+      <div class="mac-karti">
+        <div class="mac-tarih">10 Temmuz 2025</div>
+        <div class="mac-detay">
+          <span>Türkiye</span> vs <span>İtalya</span>
+        </div>
+        <div class="mac-sonuc">Henüz Oynanmadı</div>
+      </div>
+
+      <div class="mac-karti">
+        <div class="mac-tarih">13 Temmuz 2025</div>
+        <div class="mac-detay">
+          <span>Türkiye</span> vs <span>Polonya</span>
+        </div>
+        <div class="mac-sonuc">Henüz Oynanmadı</div>
+      </div>
+
+      <div class="mac-karti">
+        <div class="mac-tarih">16 Temmuz 2025</div>
+        <div class="mac-detay">
+          <span>Türkiye</span> vs <span>ABD</span>
+        </div>
+        <div class="mac-sonuc">Henüz Oynanmadı</div>
+      </div>
+
+      <div class="mac-karti">
+        <div class="mac-tarih">19 Temmuz 2025</div>
+        <div class="mac-detay">
+          <span>Türkiye</span> vs <span>Çin</span>
+        </div>
+        <div class="mac-sonuc">Henüz Oynanmadı</div>
+      </div>
+
+      <div class="mac-karti">
+        <div class="mac-tarih">22 Temmuz 2025</div>
+        <div class="mac-detay">
+          <span>Türkiye</span> vs <span>Brezilya</span>
+        </div>
+        <div class="mac-sonuc">Henüz Oynanmadı</div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Filenin Sultanları | Tüm Hakları Saklıdır</p>
+  </footer>
+</body>
+</html>
